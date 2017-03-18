@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1DA3BF131E7DDECE00E2D1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF121E7DDECE00E2D1BB /* AppDelegate.swift */; };
-		1DA3BF151E7DDECE00E2D1BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF141E7DDECE00E2D1BB /* ViewController.swift */; };
 		1DA3BF181E7DDECE00E2D1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA3BF161E7DDECE00E2D1BB /* Main.storyboard */; };
 		1DA3BF1A1E7DDECF00E2D1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA3BF191E7DDECF00E2D1BB /* Assets.xcassets */; };
 		1DA3BF1D1E7DDECF00E2D1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA3BF1B1E7DDECF00E2D1BB /* LaunchScreen.storyboard */; };
+		1DA3BF251E7DE2CB00E2D1BB /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF241E7DE2CB00E2D1BB /* CalculatorViewController.swift */; };
+		1DA3BF271E7DE30D00E2D1BB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF261E7DE30D00E2D1BB /* ResultsViewController.swift */; };
+		1DA3BF291E7DE93900E2D1BB /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF281E7DE93900E2D1BB /* GraphView.swift */; };
+		1DA3BF2B1E7DEDFF00E2D1BB /* DiscountCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF2A1E7DEDFF00E2D1BB /* DiscountCalc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DA3BF0F1E7DDECE00E2D1BB /* DiscountCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscountCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA3BF121E7DDECE00E2D1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DA3BF141E7DDECE00E2D1BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DA3BF171E7DDECE00E2D1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DA3BF191E7DDECF00E2D1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA3BF1C1E7DDECF00E2D1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA3BF1E1E7DDECF00E2D1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA3BF241E7DE2CB00E2D1BB /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		1DA3BF261E7DE30D00E2D1BB /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		1DA3BF281E7DE93900E2D1BB /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		1DA3BF2A1E7DEDFF00E2D1BB /* DiscountCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountCalc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				1DA3BF121E7DDECE00E2D1BB /* AppDelegate.swift */,
-				1DA3BF141E7DDECE00E2D1BB /* ViewController.swift */,
 				1DA3BF161E7DDECE00E2D1BB /* Main.storyboard */,
+				1DA3BF281E7DE93900E2D1BB /* GraphView.swift */,
+				1DA3BF2A1E7DEDFF00E2D1BB /* DiscountCalc.swift */,
+				1DA3BF241E7DE2CB00E2D1BB /* CalculatorViewController.swift */,
+				1DA3BF261E7DE30D00E2D1BB /* ResultsViewController.swift */,
 				1DA3BF191E7DDECF00E2D1BB /* Assets.xcassets */,
 				1DA3BF1B1E7DDECF00E2D1BB /* LaunchScreen.storyboard */,
 				1DA3BF1E1E7DDECF00E2D1BB /* Info.plist */,
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA3BF151E7DDECE00E2D1BB /* ViewController.swift in Sources */,
+				1DA3BF291E7DE93900E2D1BB /* GraphView.swift in Sources */,
+				1DA3BF2B1E7DEDFF00E2D1BB /* DiscountCalc.swift in Sources */,
+				1DA3BF251E7DE2CB00E2D1BB /* CalculatorViewController.swift in Sources */,
 				1DA3BF131E7DDECE00E2D1BB /* AppDelegate.swift in Sources */,
+				1DA3BF271E7DE30D00E2D1BB /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

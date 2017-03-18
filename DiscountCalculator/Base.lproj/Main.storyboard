@@ -17,15 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Hcb-cb-jf6" kind="relationship" relationship="rootViewController" id="Y4f-5w-7Qk"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRV-0n-5sq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1605" y="-24"/>
         </scene>
-        <!--View Controller-->
+        <!--Calculator-->
         <scene sceneID="k9N-sx-BCu">
             <objects>
-                <viewController id="Hcb-cb-jf6" sceneMemberID="viewController">
+                <viewController id="Hcb-cb-jf6" customClass="CalculatorViewController" customModule="DiscountCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mqb-Ro-hr5"/>
                         <viewControllerLayoutGuide type="bottom" id="pvs-wy-EeR"/>
@@ -35,15 +38,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Calculator" id="sfb-fx-SDY"/>
+                    <connections>
+                        <segue destination="cz8-7e-3Dk" kind="show" identifier="showResults" id="Q70-j7-IEe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veo-3u-mwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-943" y="-24"/>
         </scene>
-        <!--View Controller-->
+        <!--Results-->
         <scene sceneID="f3i-Go-3ng">
             <objects>
-                <viewController id="cz8-7e-3Dk" sceneMemberID="viewController">
+                <viewController id="cz8-7e-3Dk" customClass="ResultsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wcT-si-Naf"/>
                         <viewControllerLayoutGuide type="bottom" id="7Z3-TD-KIO"/>
@@ -53,8 +60,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Results" id="0x0-po-HKd"/>
+                    <connections>
+                        <segue destination="MOJ-Kt-UKL" kind="unwind" identifier="unwindToCalc" unwindAction="unwindToCalcWithSegue:" id="06l-Yx-dMi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSa-q2-Ehq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MOJ-Kt-UKL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-296" y="-25"/>
         </scene>
