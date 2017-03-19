@@ -14,7 +14,7 @@
 		1DA3BF251E7DE2CB00E2D1BB /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF241E7DE2CB00E2D1BB /* CalculatorViewController.swift */; };
 		1DA3BF271E7DE30D00E2D1BB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF261E7DE30D00E2D1BB /* ResultsViewController.swift */; };
 		1DA3BF291E7DE93900E2D1BB /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF281E7DE93900E2D1BB /* GraphView.swift */; };
-		1DA3BF2B1E7DEDFF00E2D1BB /* DiscountCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF2A1E7DEDFF00E2D1BB /* DiscountCalc.swift */; };
+		1DA3BF2F1E7E90E200E2D1BB /* DiscountCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BF2E1E7E90E200E2D1BB /* DiscountCalc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		1DA3BF241E7DE2CB00E2D1BB /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		1DA3BF261E7DE30D00E2D1BB /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		1DA3BF281E7DE93900E2D1BB /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
-		1DA3BF2A1E7DEDFF00E2D1BB /* DiscountCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountCalc.swift; sourceTree = "<group>"; };
+		1DA3BF2E1E7E90E200E2D1BB /* DiscountCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountCalc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 				1DA3BF121E7DDECE00E2D1BB /* AppDelegate.swift */,
 				1DA3BF161E7DDECE00E2D1BB /* Main.storyboard */,
 				1DA3BF281E7DE93900E2D1BB /* GraphView.swift */,
-				1DA3BF2A1E7DEDFF00E2D1BB /* DiscountCalc.swift */,
+				1DA3BF2E1E7E90E200E2D1BB /* DiscountCalc.swift */,
 				1DA3BF241E7DE2CB00E2D1BB /* CalculatorViewController.swift */,
 				1DA3BF261E7DE30D00E2D1BB /* ResultsViewController.swift */,
 				1DA3BF191E7DDECF00E2D1BB /* Assets.xcassets */,
@@ -146,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA3BF291E7DE93900E2D1BB /* GraphView.swift in Sources */,
-				1DA3BF2B1E7DEDFF00E2D1BB /* DiscountCalc.swift in Sources */,
+				1DA3BF2F1E7E90E200E2D1BB /* DiscountCalc.swift in Sources */,
 				1DA3BF251E7DE2CB00E2D1BB /* CalculatorViewController.swift in Sources */,
 				1DA3BF131E7DDECE00E2D1BB /* AppDelegate.swift in Sources */,
 				1DA3BF271E7DE30D00E2D1BB /* ResultsViewController.swift in Sources */,
