@@ -39,7 +39,7 @@ class CalculatorViewController: UIViewController, UITextFieldDelegate {
         // handleSwipe is a function down below...
         // #selector() selects and executes that function
     }
-    
+
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -68,7 +68,11 @@ class CalculatorViewController: UIViewController, UITextFieldDelegate {
     @IBAction func calculateButton(_ sender: UIButton)
     {
         // make the keyboard go away
-        taxTextField.resignFirstResponder();
+        priceTextField.resignFirstResponder()
+        dollarsOffTextField.resignFirstResponder()
+        discountTextField.resignFirstResponder()
+        otherDiscountTextField.resignFirstResponder()
+        taxTextField.resignFirstResponder()
         
         // setting the variables made in this class equal to the numbers inside the text fields
         price = Float(priceTextField.text!)!

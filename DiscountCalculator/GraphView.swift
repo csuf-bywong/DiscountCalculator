@@ -58,6 +58,7 @@ class GraphView: UIView
         
         
         // draw the rectangle for how much you saved
+        // percent1 is the percentage of space the you saved rectangle will take up
         let percent1 = CGFloat(CalcData.saved / CalcData.originalPrice)
         context.setFillColor(0xa0ffab)
         context.fill(CGRect(x:rightGuide / 2 + 16, y:topGuide, width:rightGuide / 2 - 16, height:(screenHeight - 96.0)*percent1))
@@ -71,22 +72,24 @@ class GraphView: UIView
         saved3.draw(at:CGPoint(x:rightGuide / 2 + 32, y:topGuide + 48) , withAttributes: textAttributes)
         
         // draw the rectangle for what you pay
+        // percent2 is the percentage of space the you pay rectangle will take up
         let percent2 = CGFloat(CalcData.discountPrice / CalcData.originalPrice)
         context.setFillColor(0x84b1ff)
-        context.fill(CGRect(x: rightGuide / 2 + 16, y: topGuide + (screenHeight - 96.0)*0.25, width: rightGuide / 2 - 16, height: (screenHeight - 96.0)*percent2))
+        context.fill(CGRect(x: rightGuide / 2 + 16, y: topGuide + (screenHeight - 96.0)*percent1, width: rightGuide / 2 - 16, height: (screenHeight - 96.0)*percent2))
         
         // write the content inside the rectangle
         let pay = "You Pay"
         let pay2 = String(CalcData.discountPrice)
         let pay3 = String(CalcData.discountPrice / CalcData.originalPrice)
-        pay.draw(at:CGPoint(x: rightGuide / 2 + 32, y: (topGuide + (screenHeight - 96.0) * 0.25 + 16.0)), withAttributes: textAttributes)
-        pay2.draw(at:CGPoint(x: rightGuide / 2 + 32, y: (topGuide + (screenHeight - 96) * 0.25 + 32)), withAttributes: textAttributes)
-        pay3.draw(at:CGPoint(x: rightGuide / 2 + 32, y: (topGuide + (screenHeight - 96) * 0.25 + 48)), withAttributes: textAttributes)
+        pay.draw(at:CGPoint(x: rightGuide / 2 + 32, y: (topGuide + (screenHeight - 96.0) * percent1 + 16.0)), withAttributes: textAttributes)
+        pay2.draw(at:CGPoint(x: rightGuide / 2 + 32, y: (topGuide + (screenHeight - 96) * percent1 + 32)), withAttributes: textAttributes)
+        pay3.draw(at:CGPoint(x: rightGuide / 2 + 32, y: (topGuide + (screenHeight - 96) * percent1 + 48)), withAttributes: textAttributes)
         
         
         // draw the rectangle for original price
         context.setFillColor(0xfda66b)
         context.fill(CGRect(x:leftGuide, y:topGuide, width:(rightGuide / 2), height:(screenHeight - 96.0)*(percent1 + percent2)))
+      
         // write the content inside the rectangle
         let oPrice = "Original Price"
         let oPrice2 = String(CalcData.originalPrice)
